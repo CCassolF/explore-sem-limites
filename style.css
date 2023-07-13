@@ -24,20 +24,21 @@ html, body, button, input, label, textarea, ::placeholder {
 }
 
 .app {
-  width: 43rem;
+  min-width: 43rem;
   margin: auto;
-
 }
+
 .first {
   text-align: center;
-  padding-bottom: 9.3rem;
 }
 
 .first figure img {
-  width: 36.4rem;
+  min-width: 36.4rem;
   height: 37rem;
+}
 
-  margin-bottom: 1.7rem;
+.texts {
+  margin-top: 1.7rem;
 }
 
 .texts h1 {
@@ -51,20 +52,23 @@ html, body, button, input, label, textarea, ::placeholder {
   font-size: 2rem;
   font-weight: 600;
   margin-top: 0.5rem;
+  display: block;
 }
 
-.first > img {
-  width: 5.8rem;
-  height: 10.5rem;
+.texts img {
+  min-width: 5.8rem;
+  min-height: 10.5rem;
 
   margin-top: 3.5rem;
 }
 
 figure img {
-  width: 36.4rem;
+  min-width: 36.4rem;
+  min-height: 37rem;
 }
 
 main {
+  margin-top: 9.3rem;
   background: var(--bg-gradient); 
   padding: 5.2rem 3.2rem;
 
@@ -78,12 +82,14 @@ main {
   border-radius: 2rem;
 
   padding: 2.6rem;
+  margin: auto;
+  width: fit-content;
 }
 
 .card img {
-  width: 8rem;
-  height: 8rem;
-
+  min-width: 8rem;
+  min-height: 8rem;
+  object-fit: cover;
   margin-bottom: 3.2rem;
 }
 
@@ -173,8 +179,12 @@ button {
   cursor: pointer;
 }
 
+.stars figure {
+  display: none;
+}
+
 footer {
-  padding: 16px;
+  padding: 1.6rem;
   background: var(--bg-gradient);
 }
 
@@ -185,3 +195,107 @@ footer p {
   font-weight: 600;
 }
 
+@media(min-width: 1300px) {
+  .app {
+    width: 100%;
+  }
+
+  .first {
+    margin-inline: 10.9rem 3rem;
+    text-align: start;
+    display: grid;
+    justify-content: center;
+    column-gap: 2.8rem;
+    grid-template-areas: 
+    'A B';
+  }
+
+  .first figure {
+    grid-area: B;
+    width: 72rem;
+    height: fit-content;
+  }
+
+  .first figure img {
+    width: 100%;
+    height: fit-content;
+    object-fit: cover;
+  }
+
+  .texts {
+    grid-area: A;
+    margin: 31.2rem auto 0;
+  }
+
+  .texts h1 {
+    font-size: 5.8rem;
+  }
+  
+  .texts span {
+    font-size: 3.2rem;
+  }
+
+  .texts img {
+    margin-top: 17.9rem;
+  }
+
+  main {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    gap: 6rem;
+    padding: 6.4rem 11.1rem;
+  }
+
+  .card {
+    width: fit-content;
+    padding: 3.2rem;
+
+    margin: 0;
+  }
+
+  .card img {
+    width: 9.7rem;
+    height: 9.7rem;
+
+    margin-bottom: 4rem;
+  }
+
+  .card-information h2 {
+    font-size: 3.5rem;
+  }
+
+  .card-information p {
+    width: 32.1rem;
+    font-size: 2rem;
+  }
+
+  .stars {
+    display: flex;
+  }
+
+  .stars form {
+    width: 100%;
+    padding-left: 10.9rem;
+  }
+
+  .stars legend {
+    font-size: 4.2rem;
+  }
+
+  .stars figure {
+    width: 100%;
+    display: block;
+  }
+
+  .stars figure img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+  }
+
+  footer {
+    padding: 3.2rem;
+  }
+} 
