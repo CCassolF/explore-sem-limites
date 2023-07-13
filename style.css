@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Mulish', sans-serif;
+  font-size: 62.5%;
+
+  --bg-main: #F9F4FB;
+  --bg-gradient: linear-gradient(134deg, #343193 0%, #302C63 100%); 
+  --color-white: #FFFFFF;
+  --color-dark-pink: #B52184;
+  --color-dark-blue: #312D64;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+html, body, button, input, label, textarea, ::placeholder {
+  font-family: 'Mulish', sans-serif;
+}
+
+.app {
+  width: 43rem;
+  margin: auto;
+
+}
+.first {
+  text-align: center;
+  padding-bottom: 9.3rem;
+}
+
+.first figure img {
+  width: 36.4rem;
+  height: 37rem;
+
+  margin-bottom: 1.7rem;
+}
+
+.texts h1 {
+  color: var(--color-dark-pink);
+  font-size: 3.2rem;
+  font-weight: 900;
+}
+
+.texts span {
+  color: #312D64;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.first > img {
+  width: 5.8rem;
+  height: 10.5rem;
+
+  margin-top: 3.5rem;
+}
+
+figure img {
+  width: 36.4rem;
+}
+
+main {
+  background: var(--bg-gradient); 
+  padding: 5.2rem 3.2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.card {
+  background-color: var(--color-white);
+  border-radius: 2rem;
+
+  padding: 2.6rem;
+}
+
+.card img {
+  width: 8rem;
+  height: 8rem;
+
+  margin-bottom: 3.2rem;
+}
+
+.card-information h2 {
+  color: var(--color-dark-pink);
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.card-information p {
+  width: 26.5rem;
+  margin-top: 1.8rem;
+
+  color: var(--color-dark-blue);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+form {
+  padding: 7.8rem 4rem;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+fieldset legend {
+  color: var(--color-dark-pink);
+  font-size: 3.2rem;
+  font-weight: 900;
+  margin-bottom: 4.3rem;
+}
+
+.input-wrapper label input,
+.text-wrapper label textarea{
+  width: 100%;
+  border-radius: 16px;
+  border: 0.2rem solid var(--color-dark-blue);
+
+  padding: 1.2rem 5rem;
+  color: var(--color-dark-blue);
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.6rem;  
+}
+
+.text-wrapper label textarea {
+  padding-left: 1.6rem;
+}
+
+input::placeholder {
+  color: var(--color-dark-blue);
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.6rem;  
+}
+
+label {
+  display: block;
+  position: relative;
+}
+
+label i {
+  color: var(--color-dark-pink);
+  font-size: 2.4rem;
+  position: absolute;
+  padding: 1.2rem;
+  top: 0;
+  left: 0;
+}
+
+button {
+  margin-top: 2.4rem;
+  padding: 1.6rem;
+
+  color: var(--color-white);
+  font-size: 1.4rem;
+  font-weight: 700;
+
+  border: none;
+  border-radius: 1.6rem;
+  background: var(--bg-gradient);
+
+  cursor: pointer;
+}
+
+footer {
+  padding: 16px;
+  background: var(--bg-gradient);
+}
+
+footer p {
+  color: var(--color-white);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
